@@ -5,7 +5,6 @@
   "dependencies": {
     "Outlook.Mail.Activities": "[1.0.2]",
     "OutlookMailWithExcel.Activities": "[1.0.0]",
-    "System.Text.RegularExpressions": "[4.3.1]",
     "UiPath.Excel.Activities": "[2.11.0-preview]",
     "UiPath.Mail.Activities": "[1.11.0-preview]",
     "UiPath.MicrosoftOffice365.Activities": "[1.9.0]",
@@ -22,6 +21,7 @@
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
+    "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
     "excludedLoggedData": [

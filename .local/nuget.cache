@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gOOqmPfB/nd2PkmU5bGh4F/Nk7zmbw5gp90YZtu42VAMfN6UV2GS26iKOHAGizVGhyNfEUFVqZxMBvmjl4aOjA==",
+  "dgSpecHash": "4paJr8aaj7XVr2s9mhm+IWzVLGkc38Hf0LQNFzv9tyeetj/HQ3KI2p0DTJduk8/m9aGm4Q9wUS4ZLhSWFhA9wQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\PC\\Documents\\UiPath\\MonthlyOrderPublishingReportPreperation\\.local\\",
   "expectedPackageFiles": [
@@ -74,7 +74,6 @@
     "C:\\Users\\PC\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.text.encodings.web\\4.7.1\\system.text.encodings.web.4.7.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\system.text.regularexpressions\\4.3.1\\system.text.regularexpressions.4.3.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.threading.tasks.dataflow\\5.0.0\\system.threading.tasks.dataflow.5.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",

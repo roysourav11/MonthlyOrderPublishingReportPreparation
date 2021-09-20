@@ -329,14 +329,6 @@
         "C:\\Users\\PC\\.nuget\\packages\\userunput/1.0.1\\lib/net45/UserUnput_Expressions_2531268.dll"
       ],
       "Path": "C:\\Users\\PC\\.nuget\\packages\\userunput\\1.0.1"
-    },
-    {
-      "Package": {
-        "Id": "System.Text.RegularExpressions",
-        "Version": "4.3.1"
-      },
-      "Assemblies": [],
-      "Path": "C:\\Users\\PC\\.nuget\\packages\\system.text.regularexpressions\\4.3.1"
     }
   ],
   "Conflicts": [],
@@ -1119,11 +1111,6 @@
           "Item2": "[4.5.0, )"
         }
       ]
-    },
-    "System.Text.RegularExpressions": {
-      "Id": "System.Text.RegularExpressions",
-      "Version": "4.3.1",
-      "Dependencies": []
     },
     "System.Threading.Channels": {
       "Id": "System.Threading.Channels",
@@ -2170,16 +2157,6 @@
         "C:\\Users\\PC\\.nuget\\packages\\system.text.json\\4.7.2\\lib\\net461\\System.Text.Json.dll"
       ],
       "Path": "C:\\Users\\PC\\.nuget\\packages\\system.text.json\\4.7.2"
-    },
-    {
-      "Package": {
-        "Id": "System.Text.RegularExpressions",
-        "Version": "4.3.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\PC\\.nuget\\packages\\system.text.regularexpressions\\4.3.1\\lib\\net45\\_._"
-      ],
-      "Path": "C:\\Users\\PC\\.nuget\\packages\\system.text.regularexpressions\\4.3.1"
     },
     {
       "Package": {
