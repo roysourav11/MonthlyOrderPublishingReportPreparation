@@ -13,7 +13,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1240,1144</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,1049</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -76,10 +76,9 @@
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="421,1079" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="421,984" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strPDFFileName" />
       <Variable x:TypeArguments="x:String" Name="strExcelFileName" />
@@ -94,7 +93,6 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="379,55" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
     <Assign sap2010:Annotation.AnnotationText="Excel File Name" sap:VirtualizedContainerService.HintSize="379,91" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[strExcelFileName]</OutArgument>
@@ -155,24 +153,12 @@
     </If>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke DisctrictComparison workflow" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Process\DisctrictComparisonProcess_and_ExcelUpload.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="in_ExcelFilePath">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_strExcelFilePath" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_strPDFText">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="StrPDFText" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_strPDFDueDate">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strDueDate" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_strPDFFilePath">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_strPDFFilePath" />
-        </InArgument>
-        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">
-          <mva:VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="in_Config" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_strPDFFileMonthName">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strPDFFileMonth" />
-        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_ExcelFilePath">[in_strExcelFilePath]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strPDFText">[StrPDFText]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strPDFDueDate">[strDueDate]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strPDFFilePath">[in_strPDFFilePath]</InArgument>
+        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strPDFFileMonthName">[strPDFFileMonth]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
   </Sequence>

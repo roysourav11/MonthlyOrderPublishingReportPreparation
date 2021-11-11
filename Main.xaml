@@ -203,7 +203,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </State>
-    <State x:Name="__ReferenceID1" sap2010:Annotation.AnnotationText="Process flow will be performed here, and in case any any exception will bstopped the processs" DisplayName="Process Transaction" sap:VirtualizedContainerService.HintSize="484,982" sap2010:WorkflowViewState.IdRef="State_3">
+    <State x:Name="__ReferenceID1" sap2010:Annotation.AnnotationText="Process flow will be performed here, and in case any any exception will bstopped the processs" DisplayName="Process Transaction" sap:VirtualizedContainerService.HintSize="231,127" sap2010:WorkflowViewState.IdRef="State_3">
       <State.Entry>
         <TryCatch DisplayName="Try to process transaction" sap:VirtualizedContainerService.HintSize="438,553" sap2010:WorkflowViewState.IdRef="TryCatch_9">
           <sap:WorkflowViewStateService.ViewState>
@@ -441,7 +441,7 @@
       </State.Transitions>
     </State>
     <x:Reference>__ReferenceID0</x:Reference>
-    <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="Read configuration file and initialize applications used in the process." DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="254,103" sap2010:WorkflowViewState.IdRef="State_2">
+    <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="Read configuration file and initialize applications used in the process." DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="881,2186" sap2010:WorkflowViewState.IdRef="State_2">
       <State.Entry>
         <TryCatch DisplayName="Try initializing settings and applications" sap:VirtualizedContainerService.HintSize="835,1741" sap2010:WorkflowViewState.IdRef="TryCatch_2">
           <sap:WorkflowViewStateService.ViewState>
@@ -597,12 +597,25 @@
                     </ui:InvokeWorkflowFile>
                     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Sending Email" DisplayName="Invoke SendMailMessage workflow" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_26" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Process\SendMailMessage.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
-                        <InArgument x:TypeArguments="x:String" x:Key="In_strToMailAddress">[Config("To_MailID").ToString]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="In_strSubject">[Config("SubjectForNotWorkingDay").ToString]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="In_Attachemnt">[String.Empty]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="In_strMailBody">[strEmailBody]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="In_strFromEmail">[Config("From_MailID").ToString]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="In_strFromName">[Config("From_Name").ToString]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="In_strToMailAddress">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Config(&quot;To_MailID&quot;).ToString" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="In_strSubject">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Config(&quot;SubjectForNotWorkingDay&quot;).ToString" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="In_Attachemnt">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="String.Empty" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="In_strMailBody">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strEmailBody" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="In_strFromEmail">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Config(&quot;From_MailID&quot;).ToString" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="In_strFromName">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Config(&quot;From_Name&quot;).ToString" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_strDueDateMonth" />
                       </ui:InvokeWorkflowFile.Arguments>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">

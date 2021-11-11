@@ -2194,7 +2194,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.6.1/win7-x86": {
+    ".NETFramework,Version=v4.6.1/win10-x64": {
       "BitMiracle.Docotic.Pdf/7.5.11645": {
         "type": "package",
         "compile": {
@@ -2922,7 +2922,7 @@
           "lib/net45/Microsoft.Web.WebView2.Wpf.dll": {}
         },
         "native": {
-          "runtimes/win-x86/native/_._": {}
+          "runtimes/win-x64/native/_._": {}
         },
         "build": {
           "build/_._": {}
@@ -7700,6 +7700,11 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Users\\PC\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+      }
+    },
+    "runtimes": {
+      "win10-x64": {
+        "#import": []
       }
     }
   }

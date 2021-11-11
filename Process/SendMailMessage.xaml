@@ -96,7 +96,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="713,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Starting sending Email&quot;]" />
-    <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="713,22" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAymcPnbNDR0Wq5WbPyhc5bgAAAAACAAAAAAAQZgAAAAEAACAAAADzYNAW67e7n1/aGXhDLkxFkWz4lhFbIICUhIm1YGOXgAAAAAAOgAAAAAIAACAAAAALaFp+MLknmk9kjGFLS/E1QzbXzGh+D55hnaZSzUnuxRAAAAB4zVNh0Sch/DV5o7IAwv0NQAAAAI/ptzE87G45c1p0KeKeepDEds7hCS/en5Tlv3Z/0A1sNNqJF4OzS6tu44arTlHIMawgLZThR+OEhVe6SqU14EE=" Result="[strSendingPassword]" />
+    <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="713,22" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAymcPnbNDR0Wq5WbPyhc5bgAAAAACAAAAAAAQZgAAAAEAACAAAADvYmJrOCCFKJjVUcMX/lIjOiqGYrj/l743eSNuxD42sgAAAAAOgAAAAAIAACAAAABs2bkElQ9i0y37YfSu/UYqDlCdHxvcjjwGJ6caqQS1URAAAAChY1ETQTmjfkMRTkfTLNH7QAAAAA52hSftOAw5I6MZzRS9eDwdgbVkT0XKFNTKckFDYrYPkZMojmfvOUYUEl5jMnrNXzOxMaFeXNdnnM1sxi0D1A8=" Result="[strSendingPassword]" />
     <Assign sap:VirtualizedContainerService.HintSize="713,60" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[In_strSubject]</OutArgument>
